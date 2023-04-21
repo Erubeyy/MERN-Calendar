@@ -15,3 +15,4 @@ Functional Calendar application created with MERN stack
 - `"react-big-calendar": "^1.6.9"`
 - `"react-modal": "^3.16.1"`
 - `"react-datepicker": "^4.11.0"`
+- `"sweetalert2": "^11.7.3"`
