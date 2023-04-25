@@ -5,6 +5,7 @@
 const {Router} = require('express');
 const {check} = require('express-validator');
 const router = Router();
+const {validateJWT} = require('../middlewares/validar-jwt');
 
 const { createUser, userLogin, revalidateToken } = require('../controllers/auth')
 const {fieldValidator} = require("../middlewares/field-validator");
@@ -30,7 +31,7 @@ router.post(
     userLogin
 );
 
-router.get('/renew', revalidateToken);
+router.get('/renew', validateJWT, revalidateToken);
 
 
 
