@@ -5,8 +5,8 @@ export const CalendarEventBox = ({ event }) => {
 
     return(
         <>
-            <strong>{title}</strong>
-            <span> - {user.name}</span>
+            <strong style={{fontSize: "10px"}} >{title}</strong>
+            <span style={{fontSize: "8px"}}> - {user.name}</span>
         </>
     )
 }
